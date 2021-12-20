@@ -1,0 +1,8 @@
+body {
+    background-color: gray;
+    padding: 0px;
+}
+#graph {
+    width: 100%;
+    height: 100%;
+}
