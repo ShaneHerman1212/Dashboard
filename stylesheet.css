@@ -1,8 +1,41 @@
 body {
-    background-color: gray;
+    background-color: #ccc;
     padding: 0px;
 }
 #graph {
     width: 100%;
     height: 100%;
+}
+#botText {
+    position: absolute;
+    left: 20px;
+    top: 0px;
+}
+#monthText {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+#traffic {
+    position: relative;
+}
+#graphic {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 250px;
+    height: 220px;
+    padding-top: 30px;
+}
+#mitigatedRing {
+    position: absolute;
+    left: 30px;
+}
+#mitigatedNumbers {
+    position: absolute;
+    top: 100px;
+    left: 90px;
+}
+.grayColor {
+    color: #ccc;
 }

@@ -11,15 +11,15 @@
 <body>
     <h1>Dashboard</h1>
     <div class="container-fluid">
-        <div class="row"> 
+        <div class="row g-3"> 
             <div class="col-lg-3 col-md-6 px-4">
                 <div class="row">
                     <div class="col-3 bg-primary">
                         <img class="d-block mx-auto mt-4" src="small-bot-top-col1.png" alt="Robot">
                     </div>
                     <div class="col-9 bg-white">
-                        <p class="text-center fw-bold fs-6">Verified Bots</p>
-                        <p class="text-center fs-1 fw-bold">12</p>
+                        <p class="text-center fw-bold fs-6">Total Verified Bots</p>
+                        <p class="text-center fs-1 fw-bold grayColor">12</p>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                     </div>
                     <div class="col-9 bg-white">
                         <p class="text-center fw-bold fs-6">Blocked Threats</p>
-                        <p class="text-center fs-1 fw-bold">0</p>
+                        <p class="text-center fs-1 fw-bold grayColor">0</p>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="col-9 bg-white">
                         <p class="text-center fw-bold fs-6">CAPTCHA Fails</p>
-                        <p class="text-center fs-1 fw-bold">4</p>
+                        <p class="text-center fs-1 fw-bold grayColor">4</p>
                     </div>
                 </div>
             </div>
@@ -52,21 +52,41 @@
                     </div>
                     <div class="col-9 bg-white">
                         <p class="text-center fw-bold fs-6">Verified Visitors</p>
-                        <p class="text-center fs-1 fw-bold">502</p>
+                        <p class="text-center fs-1 fw-bold grayColor">502</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row"> 
-            <div class="col-md-7 border">
-                <img src="Bots-Traffic.png" alt="Graph of traffic data" id="graph">
+        <div class="row my-3 g-3"> 
+            <div class="col-md-7" id="traffic">
+                <img class="bg-white rounded" src="Bots-Traffic.png" alt="Graph of traffic data" id="graph">
+                <div class="fs-4 fw-bold" id="botText">Bots Traffic</div>
+                <div class="fs-4 fw-bold" id="monthText">Current Month</div>
             </div>
-            <div class="col-md-5 border">row 2 col 2</div>
+            <div class="col-md-5 bg-white rounded">
+                <div class="text-center fs-4 fw-bold">Mitigated</div>
+                <div id="graphic">
+                    <img src="mitigated-ring-middle-col2.png" alt="Mitigated ring" width="194px" height="173px" id="mitigatedRing">
+                    <img src="mitigated-numbers-middle-col2.png" alt="Mitigated numbers" width="63px" height="35px" id="mitigatedNumbers">
+                </div>
+            </div>
         </div>
-        <div class="row"> 
-            <div class="col-md border">row 3 col 1</div>
-            <div class="col-md border">row 3 col 2</div>
-            <div class="col-md border">row 3 col 3</div>
+        <div class="row my-3 g-3 pe-2"> 
+            <div class="col-md rounded mx-2 bg-white">
+                <div class="text-center fs-4 fw-bold">Bots To Review</div>
+                <img src="bots-to-review-bottom-col1.png" alt="Bots to review" class="d-block mx-auto mb-3">
+                <div class="text-center fs-6">Real Time Data Graph</div>
+            </div>
+            <div class="col-md rounded mx-2 bg-white">
+                <div class="text-center fs-4 fw-bold">Automated</div>
+                <img src="automated-bottom-col2.png" alt="Automated" class="d-block mx-auto mb-3">
+                <div class="text-center fs-6">Real Time Data Graph</div>
+            </div>
+            <div class="col-md rounded mx-2 bg-white">
+                <div class="text-center fs-4 fw-bold">Verified Visitors</div>
+                <img src="prisitine-visitors-bottom-col3.png" alt="Prisitine Visitors" class="d-block mx-auto mb-3">
+                <div class="text-center fs-6">Real Time Data Graph</div>
+            </div>
         </div>
     </div>
     
