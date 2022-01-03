@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Practice</title>
+    <link rel="stylesheet" href="dashboard.css" type="text/css">
+</head>
+<body>
+    <div id="margin">
+        <h1>Dashboard</h1>
+        <div id="grid">
+            <div class="iconometer" id="botMeter">
+                <div class="icon" id="bots">
+                    <img height="75px" width="50px" src="small-bot-top-col1.png" alt="Robot">
+                </div> 
+                <div class="meter">
+                    <p class="meterTitle">Total Verified Bots</p>
+                    <p class="meterNumber">12</p>
+                </div>
+            </div>
+            <div class="iconometer" id="threatMeter">
+                <div class="icon" id="threats">
+                    <img height="50px" width="50px" src="blocked-bots-top-col2.png" alt="Do Not Enter Icon">
+                </div> 
+                <div class="meter">
+                    <p class="meterTitle">Blocked Threat</p>
+                    <p class="meterNumber">0</p>
+                </div>
+            </div>
+            <div class="iconometer" id="captchaMeter">
+                <div class="icon" id="CAPTCHA">
+                    <img height="50px" width="50px" src="captcha-fail-top-col3.png" alt="Shield">
+                </div> 
+                <div class="meter">
+                    <p class="meterTitle">CAPTCHA Fails</p>
+                    <p class="meterNumber">4</p>
+                </div>
+            </div>
+            <div class="iconometer" id="visitorMeter">
+                <div class="icon" id="visitors">
+                    <img height="50px" width="50px" src="pristine-visitors-top-col4.png" alt="Check Mark">
+                </div> 
+                <div class="meter">
+                    <p class="meterTitle">Verified Visitors</p>
+                    <p class="meterNumber">502</p>
+                </div>
+            </div>
+            <div id="flexRow">
+                <div id="traffic">
+                    <span class="relative">
+                        <span id="botTraffic">Bots Traffic</span>
+                        <span id="currentMonth">Current Month</span>
+                        <img src="Bots-Traffic.png" id="chart" alt="Chart of Bot Traffic">
+                    </span>
+                </div>
+                <div id="mitigated">
+                    <p class="meterTitle">Mitigated</p>
+                    <div id="ring">
+                        <img src="mitigated-numbers-middle-col2.png" width="63" height="35" alt="Mitigated Numbers">
+                    </div>
+                </div>
+            </div>
+            <div class="speedometer" id="botSpeed">
+                <p class="meterTitle">Bots to Review</p>
+                <img class="speedRing" src="bots-to-review-bottom-col1.png" alt="Bots to Review Number">
+                <p>Real Time Data Graph</p>
+            </div>
+            <div class="speedometer" id="autoSpeed">
+                <p class="meterTitle">Automated</p>
+                <img class="speedRing" src="automated-bottom-col2.png" alt="Automated Number">
+                <p>Real Time Data Graph</p>
+            </div>
+            <div class="speedometer" id="visitSpeed">
+                <p class="meterTitle">Verified Visitors</p>
+                <img class="speedRing" src="prisitine-visitors-bottom-col3.png" alt="Verified Visitors Number">
+                <p>Real Time Data Graph</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

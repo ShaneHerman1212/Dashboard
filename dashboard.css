@@ -1,0 +1,160 @@
+.iconometer{
+    display: flex;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    grid-template-areas: 
+    "bm"
+    "tm"
+    "cm"
+    "vm"
+    "fr"
+    "bs"
+    "as"
+    "vs"
+}
+#chart{
+    width: 300px;
+    height: 150px;
+}
+.icon{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meter{
+    flex: 1;
+    background-color: white;
+}
+#bots{
+    background-color:blue;
+}
+#threats{
+    background-color:red;
+}
+#CAPTCHA{
+    background-color:green;
+}
+#visitors{
+    background-color:darkorange;
+}
+#botMeter{
+    grid-area: bm;
+}
+#threatMeter{
+    grid-area: tm;
+}
+#captchaMeter{
+    grid-area: cm;
+}
+#visitorMeter{
+    grid-area: vm;
+}
+#flexRow{
+    display: flex;
+    grid-area: fr;
+    gap: 20px;
+}
+#traffic{
+    flex: 2;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+.relative{
+    position: relative;
+}
+#botTraffic{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: bold;
+}
+#currentMonth{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-weight: bold;
+}
+#mitigated{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+#ring{
+    width: 175px;
+    height: 150px;
+    background-image: url("mitigated-ring-middle-col2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#botSpeed{
+    grid-area: bs;
+}
+#autoSpeed{
+    grid-area: as;
+}
+#visitSpeed{
+    grid-area: vs;
+}
+.speedometer{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.meterTitle{
+    text-align: center;
+    font-weight: bold;
+}
+.meterNumber{
+    text-align: center;
+    color: gray;
+    font-size: 32px;
+}
+body{
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+#margin{
+    margin: 20px;
+}
+@media (min-width:600px){
+    #grid{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "bm bm bm tm tm tm"
+        "cm cm cm vm vm vm"
+        "fr fr fr fr fr fr"
+        "bs bs as as vs vs";
+    }
+    #chart{
+        width: 500px;
+        height: 250px;
+    }
+}
+@media (min-width:1000px){
+    #grid{
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+        "bm bm bm tm tm tm cm cm cm vm vm vm"
+        "fr fr fr fr fr fr fr fr fr fr fr fr"
+        "bs bs bs bs as as as as vs vs vs vs";
+    }
+}
