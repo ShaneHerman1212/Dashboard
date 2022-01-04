@@ -55,6 +55,7 @@
 }
 #flexRow{
     display: flex;
+    flex-wrap: wrap;
     grid-area: fr;
     gap: 20px;
 }
